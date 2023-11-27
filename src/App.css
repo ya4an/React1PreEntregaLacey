@@ -1,42 +1,148 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.nav-container-block {
+  display: block;
+  width: 100%;
+}
+
+.header-container-flex {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(83, 134, 83);
+}
+
+.header-search-nav {
+  margin: 2px 10px;
+  height: 30px;
+  width: 400px;
+  display: flex;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+.input-search {
+  width: 100%;
+  border: none;
+  color: #F5FAFF;
+  background-color: transparent;
+  padding: 7px;
+}
+
+.input-search:focus {
+  outline: none;
+  font-size: 14px;
+}
+
+input::placeholder {
+  font-size: 14px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 200;
+  color: white;
+  padding: 0;
+}
+
+
+
+.container-img-search {
+  width: 30px;
+  border-left: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-search {
+  width: 60%;
+  padding: 3px;
+  filter: invert(100%);
+}
+
+
+
+.header-menuInfo-nav {
+  position: absolute;
+  margin: 3px;
+  display: flex;
+  right: 0;
+}
+
+.menuInfo-nav-item {
+  margin: 0 10px;
+  list-style: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+/*****************************************************************************/
+
+.preMenu-containerFlex {
+  display: flex;
+  flex-direction: row;
+  background-color: #F5FAFF;
+}
+
+.preMenu-logo {
+  width: 23
+  0px;
+  padding: 15px 40px 0 40px;
+}
+
+.logoPage {
+  width: 100%;
+}
+
+.preMenu-redes {
+  display: flex;
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  align-items: baseline;
+}
+
+.container-red {
   text-align: center;
+  margin: 15px;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  font-weight: 600;
+  color: gray;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.logoRed {
+  width: 30px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu-containerFlex {
+  display: flex;
+  background-color: #F5FAFF;
+  padding: 20px 33px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  justify-content: baseline;
+  align-items: baseline;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+
+
+.menu-nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.menu-nav-item {
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  border-right: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 0 10px;
+  color: gray;
 }
